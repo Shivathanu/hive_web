@@ -1,0 +1,18 @@
+#infoTableHeader{
+    color: #fff;
+}
+
+.yearSpace{
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.tableContainer{
+    display: flex;
+}
+
+.arrow{
+    margin-top: 25%;
+}

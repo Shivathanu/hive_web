@@ -1,0 +1,78 @@
+.patientsListContainer{
+    position: relative;
+    min-height: 100%;
+}
+
+.patientsListGrid{
+    height: auto;
+}
+
+.patientsTable{
+    background-color: rgba(15, 117, 133, 0.2);
+}
+
+.searchBarWrapper{
+    margin-bottom: 10px;
+}
+
+.addPatientCard{
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+
+.addPatientFormElements{
+    text-align: center;
+    width: 100%;
+    display: flex;
+}
+
+.patientCodeInput{
+    width: 78%;
+}
+
+.addPatientFormElements > .patientCodeInput{
+    margin-right: 5px;
+}
+
+.addPatientFormElements .patientCodeButton{
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.buttonContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.buttonContainer button{
+    border-radius: 20px;
+}
+
+button > .MuiButton-label{
+    width: auto;
+    text-transform: none;
+}
+
+.buttonContainer > a{
+    text-decoration: none;
+}
+
+.addPatientFormElements .MuiButton-containedSecondary{
+    background-color: #0f7387;
+}
+
+.addPatientFormElements .MuiButton-containedSecondary:hover{
+    background-color: #0f7387;
+}
+
+.buttonContainer .MuiButton-containedSecondary{
+    background-color: #0f7387;
+}
+
+.buttonContainer .MuiButton-containedSecondary:hover{
+    background-color: #0f7387;
+}

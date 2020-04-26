@@ -1,0 +1,26 @@
+.patientNavBar{
+    position: relative;
+    width: '100%';
+    margin-bottom: 30px;
+}
+
+.dashboardOption{
+    text-decoration: none;
+    color: rgba(0, 0, 0);
+    font-weight: bold;
+    margin-right: 5%;
+}
+
+.patientNavBar .dashboardLink{
+    width:150px;
+    border-radius: 20px;
+    background-color: rgb(233, 232, 232);
+    color: #000
+}
+
+.patientNavBar .dashboardSelectedLink{
+    width:150px;
+    border-radius: 20px;
+    background-color: #9D9D9E;
+    color: #fff
+}

@@ -1,0 +1,10 @@
+.backView{
+    background-color: #d4d5d8;
+    padding:20px 50px;
+    border-radius: 15px;
+    
+}
+
+.buttonWrapper .MuiButton-containedSecondary{
+    background-color: #0f7387;
+}

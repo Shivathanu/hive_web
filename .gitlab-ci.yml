@@ -1,0 +1,50 @@
+'UI dependencies':
+  image: node:8.15-alpine
+  stage: .pre
+  artifacts:
+    paths:
+      - "hive_web/node_modules/"
+  dependencies: []
+  script:
+    - cd "hive_web"
+    - npm install
+  only:
+    changes:
+      - hive_web/**/*
+      - .gitlab-ci.yml
+    refs:
+      - master
+
+'UI build':
+  image: node:8.15-alpine
+  stage: build
+  artifacts:
+    paths:
+      - "hive_web/build/"
+  dependencies:
+    - 'UI dependencies'
+  script:
+    - cd "hive_web"
+    - npm run build
+  only:
+    changes:
+      - hive_web/**/*
+      - .gitlab-ci.yml
+    refs:
+      - master
+
+'UI deploy':
+  stage: deploy-ui
+  image: "ruby:2.5"
+  script:
+    - apt-get update -qy
+    - apt-get install rubygems ruby-dev -y
+    - gem install dpl
+    - cd "hive_web"
+    - dpl --provider=heroku --app=hive-health-diary-web --api-key=76c0d919-128e-4e93-a35e-7b83737c36c6 --skip_cleanup
+  only:
+    changes:
+      - hive_web/**/*
+      - .gitlab-ci.yml
+    refs:
+      - master

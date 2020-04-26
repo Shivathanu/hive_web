@@ -1,0 +1,57 @@
+.main{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.imagem{
+    border-right: 3px solid rgba(0, 0, 0, 0.12);
+    float: left;
+  /*  padding: 50px;*/
+    width: 50%;
+    height: 60%;
+    height:auto;
+    text-align: center;
+    margin: auto;
+    overflow: auto;
+}
+
+.image_to{
+    height: 100%;
+    width: 100%;
+}
+
+.form{
+    width: 50%;
+    padding: 50px;
+    float: right;
+    text-align: center;
+}
+
+.form .MuiFormControl-root{
+    margin: 10px 0;
+}
+
+.form .MuiFormControl-root .MuiTextField-root > div{
+    border-radius: 20px;
+}
+
+.form .MuiFormControl-root .MuiAutocomplete-root > div{
+    margin: 0;
+}
+.buttonWrapper{
+    width: 90%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.buttonWrapper > .registerProfessional{
+    border-radius: 20px;
+    padding: 13px 16px;
+}
+
+
